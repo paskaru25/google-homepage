@@ -12,9 +12,7 @@ body {
 }
 
 /* WRAPPER */
-
-#wrapper{
-
+#wrapper {
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -22,10 +20,10 @@ body {
 }
 
 /* NAVIGATION */
-
 nav {
   display: flex;
   justify-content: flex-end;
+  padding-right: 5px;
 }
 
 /* main menu ul */
@@ -49,41 +47,112 @@ nav {
   font-size: 13px;
 }
 
-.main-menu li a:hover{
+.main-menu li a:hover {
   text-decoration: underline;
 }
 
 /* added center alignment to icons in nav */
-.material-icons, .main-nav-img{
-  padding-top:3px;
+.material-icons, .main-nav-img {
+  padding-top: 3px;
 }
 
-.main-nav-img{
+.main-nav-img {
   border-radius: 50%;
 }
 
-/* MAIN LOGO */
+#main-content {
+  margin-bottom: 100px;
+}
 
-.main-logo{
+/* MAIN LOGO */
+.main-logo {
   display: block;
   margin: 0 auto;
 }
 
 /* input */
-input{
-  margin: 0 auto;
+input {
+  margin: 10px auto;
   display: block;
+  width: 548px;
+  border: 1px solid #DADCE0;
+  background-color: transparent;
+  padding: 10px;
+  outline: none;
 }
 
 /* buttons */
-.buttons{
+.buttons {
   text-align: center;
 }
 
-.lang{
-  text-align: center;
+.buttons button {
+  background-color: #F9F9F9;
+  border: 1px solid transparent;
+  padding: 10px;
 }
 
-#main-content{
+.buttons button:hover{
+  border: 1px solid #DADCE0;
+}
 
+.buttons button a{
+  display: block;
+  text-decoration: none;
+  font-size: 15px;
+  color: #5E5F62;
+}
+
+.lang {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.lang a{
+  text-decoration: none;
+  color: #3327B4;
+  padding-left: 10px;
+
+}
+
+.lang a:hover{
+  text-decoration: underline;
+}
+
+/* FOOTER */
+footer {
+  background-color: #F2F2F2;
+}
+
+.first-footer {
+  color: #777C81;
+  border-bottom: 1px solid #DADCE0;
+}
+
+.first-footer p {
+  padding-left: 30px;
+}
+
+.second-footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-1, .menu-2 {
+  list-style: none;
+  padding-left: 11px;
+  display: flex;
+  align-items: center;
+}
+
+.menu-1 li a, .menu-2 li a {
+  display: block;
+  text-decoration: none;
+  color: #777C81;
+  padding: 5px 18px;
+}
+
+.menu-1 li a:hover, .menu-2 li a:hover {
+  text-decoration: underline;
 }
